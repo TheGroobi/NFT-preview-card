@@ -1,0 +1,127 @@
+:root {
+    --main-soft-blue: hsl(215, 51%, 70%);
+    --main-cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --main-bg2: hsla(218, 52%, 9%, 0.404);
+    --main-bg3: hsla(218, 52%, 9%, 0.144);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+    height: 100vh;
+}
+
+
+.container { 
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0px 30px 4px 15px var(--main-bg2), 0px 35px 4px 60px var(--main-bg3);
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+p {
+    color: var(--main-soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.body-text {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.time, .price {
+    margin-left: 0.5em;
+}
+.container-price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+
+}
+.container-price .price {
+    color: var(--main-cyan);
+
+}
+
+.equilibrium {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.author-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.author {
+    width: 10%;
+    height: 10%;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+a {
+    color: var(--white);
+}
+
+a:hover, .h1:hover, .overlay:hover {
+    color: var(--main-cyan);
+    cursor: pointer;
+}
+
+.overlay {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    height: 350px;
+    position: absolute;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.overlay:hover .color {
+    background-color: var(--main-cyan) !important;
+    opacity: 50%;
+}
+
+.overlay:hover .icon {
+    opacity: 1;
+}
+
+.icon {
+    position: absolute;
+    opacity: 0;
+}
+
+.overlay:hover .equilibrium {
+    background-color: var(--main-cyan);
+}
