@@ -19,8 +19,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: https://github.com/TheGroobi/blog-preview-card
-- Live Site URL: https://blog-preview-card-weld.vercel.app
+- Solution URL: https://github.com/TheGroobi/NFT-preview-card
+- Live Site URL: https://nft-preview-card-ochre-five.vercel.app/
 
 ## My process
 The start was pretty easy, but i got stuck on the icons trying to display them in one line with the text. And Later the :hover function with overlay on an image was really hard for me to figure out.
